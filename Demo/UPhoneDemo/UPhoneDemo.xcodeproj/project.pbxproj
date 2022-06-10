@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C0DA7CBE2DA4A188AA9D209 /* Pods_UPhoneDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AF6F4E441947431B136A65 /* Pods_UPhoneDemo.framework */; };
+		CE0C7171274229B5003B1EA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C7170274229B5003B1EA8 /* AppDelegate.m */; };
+		CE0C7177274229B5003B1EA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C7176274229B5003B1EA8 /* ViewController.m */; };
+		CE0C717A274229B5003B1EA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0C7178274229B5003B1EA8 /* Main.storyboard */; };
+		CE0C717C274229B7003B1EA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0C717B274229B7003B1EA8 /* Assets.xcassets */; };
+		CE0C717F274229B7003B1EA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0C717D274229B7003B1EA8 /* LaunchScreen.storyboard */; };
+		CE0C7182274229B7003B1EA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C7181274229B7003B1EA8 /* main.m */; };
+		CE0C718C274229B7003B1EA8 /* UPhoneDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C718B274229B7003B1EA8 /* UPhoneDemoTests.m */; };
+		CE0C7196274229B7003B1EA8 /* UPhoneDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C7195274229B7003B1EA8 /* UPhoneDemoUITests.m */; };
+		CE0C7198274229B7003B1EA8 /* UPhoneDemoUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C7197274229B7003B1EA8 /* UPhoneDemoUITestsLaunchTests.m */; };
+		CE0C71BE27422A12003B1EA8 /* UPhoneDefinitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C71AA27422A12003B1EA8 /* UPhoneDefinitionView.m */; };
+		CE0C71C027422A12003B1EA8 /* UPhoneTouchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C71AF27422A12003B1EA8 /* UPhoneTouchButton.m */; };
+		CE0C71C127422A12003B1EA8 /* UPhoneNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C71B227422A12003B1EA8 /* UPhoneNavigationView.m */; };
+		CE0C71C227422A12003B1EA8 /* UPhoneBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C71B327422A12003B1EA8 /* UPhoneBaseView.m */; };
+		CE0C71C427422A12003B1EA8 /* UCBaseAnimationPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C71B727422A12003B1EA8 /* UCBaseAnimationPopView.m */; };
+		CE0C71C527422A12003B1EA8 /* UPhoneMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C71B927422A12003B1EA8 /* UPhoneMainView.m */; };
+		CE0C71C627422A12003B1EA8 /* UTestVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C71BD27422A12003B1EA8 /* UTestVideoViewController.m */; };
+		CE60570427880E2E00D557DE /* UPhoneSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6056F627880E2E00D557DE /* UPhoneSettingTableViewCell.m */; };
+		CE60570527880E2E00D557DE /* UPhoneSettingSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6056F727880E2E00D557DE /* UPhoneSettingSwitchTableViewCell.m */; };
+		CE60570627880E2E00D557DE /* UPhoneSettingDefinitionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6056F827880E2E00D557DE /* UPhoneSettingDefinitionTableViewCell.m */; };
+		CE60570727880E2E00D557DE /* UPhoneSettingNewView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6056F927880E2E00D557DE /* UPhoneSettingNewView.m */; };
+		CE60570827880E2E00D557DE /* UPhoneSettingSwitchLiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6056FD27880E2E00D557DE /* UPhoneSettingSwitchLiveTableViewCell.m */; };
+		CE60570927880E2E00D557DE /* UPhoneSettingOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6056FE27880E2E00D557DE /* UPhoneSettingOperationTableViewCell.m */; };
+		CE60570A27880E2E00D557DE /* UPhoneSettingFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE60570227880E2E00D557DE /* UPhoneSettingFooterView.m */; };
+		CE60570D2788167200D557DE /* UPhonePacketLostView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE60570C2788167200D557DE /* UPhonePacketLostView.m */; };
+		CEBDA7AB27586AE800AA620E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBDA7AA27586AE800AA620E /* SceneDelegate.m */; };
+		CEC3045B285323B70041AC2D /* UPhoneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC30459285323A40041AC2D /* UPhoneSDK.framework */; platformFilter = ios; };
+		CEC3045C285323B70041AC2D /* UPhoneSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEC30459285323A40041AC2D /* UPhoneSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE0C7188274229B7003B1EA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0C7164274229B5003B1EA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE0C716B274229B5003B1EA8;
+			remoteInfo = UPhoneDemo;
+		};
+		CE0C7192274229B7003B1EA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE0C7164274229B5003B1EA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE0C716B274229B5003B1EA8;
+			remoteInfo = UPhoneDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE0C71A8274229F6003B1EA8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CEC3045C285323B70041AC2D /* UPhoneSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00AF6F4E441947431B136A65 /* Pods_UPhoneDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UPhoneDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B86B612A02933125BD4EE53 /* Pods-UPhoneDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UPhoneDemo.release.xcconfig"; path = "Target Support Files/Pods-UPhoneDemo/Pods-UPhoneDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A1A9AC21991BB178C2A188D0 /* Pods-UPhoneDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UPhoneDemo.debug.xcconfig"; path = "Target Support Files/Pods-UPhoneDemo/Pods-UPhoneDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0C716C274229B5003B1EA8 /* UPhoneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UPhoneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C716F274229B5003B1EA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE0C7170274229B5003B1EA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE0C7175274229B5003B1EA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE0C7176274229B5003B1EA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE0C7179274229B5003B1EA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE0C717B274229B7003B1EA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE0C717E274229B7003B1EA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE0C7180274229B7003B1EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE0C7181274229B7003B1EA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE0C7187274229B7003B1EA8 /* UPhoneDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UPhoneDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C718B274229B7003B1EA8 /* UPhoneDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UPhoneDemoTests.m; sourceTree = "<group>"; };
+		CE0C7191274229B7003B1EA8 /* UPhoneDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UPhoneDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE0C7195274229B7003B1EA8 /* UPhoneDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UPhoneDemoUITests.m; sourceTree = "<group>"; };
+		CE0C7197274229B7003B1EA8 /* UPhoneDemoUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UPhoneDemoUITestsLaunchTests.m; sourceTree = "<group>"; };
+		CE0C71AA27422A12003B1EA8 /* UPhoneDefinitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneDefinitionView.m; sourceTree = "<group>"; };
+		CE0C71AB27422A12003B1EA8 /* UPhoneBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneBaseView.h; sourceTree = "<group>"; };
+		CE0C71AD27422A12003B1EA8 /* UPhoneNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneNavigationView.h; sourceTree = "<group>"; };
+		CE0C71AF27422A12003B1EA8 /* UPhoneTouchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneTouchButton.m; sourceTree = "<group>"; };
+		CE0C71B027422A12003B1EA8 /* UCBaseAnimationPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCBaseAnimationPopView.h; sourceTree = "<group>"; };
+		CE0C71B127422A12003B1EA8 /* UPhoneMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneMainView.h; sourceTree = "<group>"; };
+		CE0C71B227422A12003B1EA8 /* UPhoneNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneNavigationView.m; sourceTree = "<group>"; };
+		CE0C71B327422A12003B1EA8 /* UPhoneBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneBaseView.m; sourceTree = "<group>"; };
+		CE0C71B527422A12003B1EA8 /* UPhoneDefinitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneDefinitionView.h; sourceTree = "<group>"; };
+		CE0C71B727422A12003B1EA8 /* UCBaseAnimationPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCBaseAnimationPopView.m; sourceTree = "<group>"; };
+		CE0C71B827422A12003B1EA8 /* UPhoneTouchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneTouchButton.h; sourceTree = "<group>"; };
+		CE0C71B927422A12003B1EA8 /* UPhoneMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneMainView.m; sourceTree = "<group>"; };
+		CE0C71BA27422A12003B1EA8 /* UCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCCommon.h; sourceTree = "<group>"; };
+		CE0C71BC27422A12003B1EA8 /* UTestVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTestVideoViewController.h; sourceTree = "<group>"; };
+		CE0C71BD27422A12003B1EA8 /* UTestVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTestVideoViewController.m; sourceTree = "<group>"; };
+		CE6056F627880E2E00D557DE /* UPhoneSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneSettingTableViewCell.m; sourceTree = "<group>"; };
+		CE6056F727880E2E00D557DE /* UPhoneSettingSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneSettingSwitchTableViewCell.m; sourceTree = "<group>"; };
+		CE6056F827880E2E00D557DE /* UPhoneSettingDefinitionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneSettingDefinitionTableViewCell.m; sourceTree = "<group>"; };
+		CE6056F927880E2E00D557DE /* UPhoneSettingNewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneSettingNewView.m; sourceTree = "<group>"; };
+		CE6056FA27880E2E00D557DE /* UPhoneSettingDefinitionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneSettingDefinitionTableViewCell.h; sourceTree = "<group>"; };
+		CE6056FB27880E2E00D557DE /* UPhoneSettingSwitchLiveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneSettingSwitchLiveTableViewCell.h; sourceTree = "<group>"; };
+		CE6056FC27880E2E00D557DE /* UPhoneSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneSettingTableViewCell.h; sourceTree = "<group>"; };
+		CE6056FD27880E2E00D557DE /* UPhoneSettingSwitchLiveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneSettingSwitchLiveTableViewCell.m; sourceTree = "<group>"; };
+		CE6056FE27880E2E00D557DE /* UPhoneSettingOperationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneSettingOperationTableViewCell.m; sourceTree = "<group>"; };
+		CE6056FF27880E2E00D557DE /* UPhoneSettingSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneSettingSwitchTableViewCell.h; sourceTree = "<group>"; };
+		CE60570027880E2E00D557DE /* UPhoneSettingFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneSettingFooterView.h; sourceTree = "<group>"; };
+		CE60570127880E2E00D557DE /* UPhoneSettingOperationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneSettingOperationTableViewCell.h; sourceTree = "<group>"; };
+		CE60570227880E2E00D557DE /* UPhoneSettingFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneSettingFooterView.m; sourceTree = "<group>"; };
+		CE60570327880E2E00D557DE /* UPhoneSettingNewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhoneSettingNewView.h; sourceTree = "<group>"; };
+		CE60570B2788167200D557DE /* UPhonePacketLostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhonePacketLostView.h; sourceTree = "<group>"; };
+		CE60570C2788167200D557DE /* UPhonePacketLostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhonePacketLostView.m; sourceTree = "<group>"; };
+		CEBDA7A927586AE800AA620E /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		CEBDA7AA27586AE800AA620E /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		CEC30459285323A40041AC2D /* UPhoneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPhoneSDK.framework; sourceTree = "<group>"; };
+		CEC746F62799048D00D741B8 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE0C7169274229B5003B1EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC3045B285323B70041AC2D /* UPhoneSDK.framework in Frameworks */,
+				9C0DA7CBE2DA4A188AA9D209 /* Pods_UPhoneDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C7184274229B7003B1EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C718E274229B7003B1EA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16448D6D0A98B20D70F4FB12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1A9AC21991BB178C2A188D0 /* Pods-UPhoneDemo.debug.xcconfig */,
+				1B86B612A02933125BD4EE53 /* Pods-UPhoneDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A29450B0227627B086A38F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC746F62799048D00D741B8 /* libAFNetworking.a */,
+				00AF6F4E441947431B136A65 /* Pods_UPhoneDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE0C7163274229B5003B1EA8 = {
+			isa = PBXGroup;
+			children = (
+				CE0C716E274229B5003B1EA8 /* UPhoneDemo */,
+				CE0C718A274229B7003B1EA8 /* UPhoneDemoTests */,
+				CE0C7194274229B7003B1EA8 /* UPhoneDemoUITests */,
+				CE0C716D274229B5003B1EA8 /* Products */,
+				16448D6D0A98B20D70F4FB12 /* Pods */,
+				8A29450B0227627B086A38F0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE0C716D274229B5003B1EA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C716C274229B5003B1EA8 /* UPhoneDemo.app */,
+				CE0C7187274229B7003B1EA8 /* UPhoneDemoTests.xctest */,
+				CE0C7191274229B7003B1EA8 /* UPhoneDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE0C716E274229B5003B1EA8 /* UPhoneDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CEC30459285323A40041AC2D /* UPhoneSDK.framework */,
+				CE0C71BB27422A12003B1EA8 /* Controller */,
+				CE0C71BA27422A12003B1EA8 /* UCCommon.h */,
+				CE0C71A927422A12003B1EA8 /* View */,
+				CE0C716F274229B5003B1EA8 /* AppDelegate.h */,
+				CE0C7170274229B5003B1EA8 /* AppDelegate.m */,
+				CEBDA7A927586AE800AA620E /* SceneDelegate.h */,
+				CEBDA7AA27586AE800AA620E /* SceneDelegate.m */,
+				CE0C7175274229B5003B1EA8 /* ViewController.h */,
+				CE0C7176274229B5003B1EA8 /* ViewController.m */,
+				CE0C7178274229B5003B1EA8 /* Main.storyboard */,
+				CE0C717B274229B7003B1EA8 /* Assets.xcassets */,
+				CE0C717D274229B7003B1EA8 /* LaunchScreen.storyboard */,
+				CE0C7180274229B7003B1EA8 /* Info.plist */,
+				CE0C7181274229B7003B1EA8 /* main.m */,
+			);
+			path = UPhoneDemo;
+			sourceTree = "<group>";
+		};
+		CE0C718A274229B7003B1EA8 /* UPhoneDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C718B274229B7003B1EA8 /* UPhoneDemoTests.m */,
+			);
+			path = UPhoneDemoTests;
+			sourceTree = "<group>";
+		};
+		CE0C7194274229B7003B1EA8 /* UPhoneDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C7195274229B7003B1EA8 /* UPhoneDemoUITests.m */,
+				CE0C7197274229B7003B1EA8 /* UPhoneDemoUITestsLaunchTests.m */,
+			);
+			path = UPhoneDemoUITests;
+			sourceTree = "<group>";
+		};
+		CE0C71A927422A12003B1EA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C71AB27422A12003B1EA8 /* UPhoneBaseView.h */,
+				CE0C71B327422A12003B1EA8 /* UPhoneBaseView.m */,
+				CE0C71B527422A12003B1EA8 /* UPhoneDefinitionView.h */,
+				CE0C71AA27422A12003B1EA8 /* UPhoneDefinitionView.m */,
+				CE0C71B127422A12003B1EA8 /* UPhoneMainView.h */,
+				CE0C71B927422A12003B1EA8 /* UPhoneMainView.m */,
+				CE0C71AD27422A12003B1EA8 /* UPhoneNavigationView.h */,
+				CE0C71B227422A12003B1EA8 /* UPhoneNavigationView.m */,
+				CE0C71B827422A12003B1EA8 /* UPhoneTouchButton.h */,
+				CE0C71AF27422A12003B1EA8 /* UPhoneTouchButton.m */,
+				CE0C71B027422A12003B1EA8 /* UCBaseAnimationPopView.h */,
+				CE0C71B727422A12003B1EA8 /* UCBaseAnimationPopView.m */,
+				CE6056FA27880E2E00D557DE /* UPhoneSettingDefinitionTableViewCell.h */,
+				CE6056F827880E2E00D557DE /* UPhoneSettingDefinitionTableViewCell.m */,
+				CE60570027880E2E00D557DE /* UPhoneSettingFooterView.h */,
+				CE60570227880E2E00D557DE /* UPhoneSettingFooterView.m */,
+				CE60570327880E2E00D557DE /* UPhoneSettingNewView.h */,
+				CE6056F927880E2E00D557DE /* UPhoneSettingNewView.m */,
+				CE60570127880E2E00D557DE /* UPhoneSettingOperationTableViewCell.h */,
+				CE6056FE27880E2E00D557DE /* UPhoneSettingOperationTableViewCell.m */,
+				CE6056FB27880E2E00D557DE /* UPhoneSettingSwitchLiveTableViewCell.h */,
+				CE6056FD27880E2E00D557DE /* UPhoneSettingSwitchLiveTableViewCell.m */,
+				CE6056FF27880E2E00D557DE /* UPhoneSettingSwitchTableViewCell.h */,
+				CE6056F727880E2E00D557DE /* UPhoneSettingSwitchTableViewCell.m */,
+				CE6056FC27880E2E00D557DE /* UPhoneSettingTableViewCell.h */,
+				CE6056F627880E2E00D557DE /* UPhoneSettingTableViewCell.m */,
+				CE60570B2788167200D557DE /* UPhonePacketLostView.h */,
+				CE60570C2788167200D557DE /* UPhonePacketLostView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE0C71BB27422A12003B1EA8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE0C71BC27422A12003B1EA8 /* UTestVideoViewController.h */,
+				CE0C71BD27422A12003B1EA8 /* UTestVideoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE0C716B274229B5003B1EA8 /* UPhoneDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0C719B274229B7003B1EA8 /* Build configuration list for PBXNativeTarget "UPhoneDemo" */;
+			buildPhases = (
+				20768F7B784C7A6EC6655E46 /* [CP] Check Pods Manifest.lock */,
+				CE0C7168274229B5003B1EA8 /* Sources */,
+				CE0C7169274229B5003B1EA8 /* Frameworks */,
+				CE0C716A274229B5003B1EA8 /* Resources */,
+				CE0C71A8274229F6003B1EA8 /* Embed Frameworks */,
+				E1832972BE467F4DFECCC5D5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UPhoneDemo;
+			productName = UPhoneDemo;
+			productReference = CE0C716C274229B5003B1EA8 /* UPhoneDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE0C7186274229B7003B1EA8 /* UPhoneDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0C719E274229B7003B1EA8 /* Build configuration list for PBXNativeTarget "UPhoneDemoTests" */;
+			buildPhases = (
+				CE0C7183274229B7003B1EA8 /* Sources */,
+				CE0C7184274229B7003B1EA8 /* Frameworks */,
+				CE0C7185274229B7003B1EA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE0C7189274229B7003B1EA8 /* PBXTargetDependency */,
+			);
+			name = UPhoneDemoTests;
+			productName = UPhoneDemoTests;
+			productReference = CE0C7187274229B7003B1EA8 /* UPhoneDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE0C7190274229B7003B1EA8 /* UPhoneDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE0C71A1274229B7003B1EA8 /* Build configuration list for PBXNativeTarget "UPhoneDemoUITests" */;
+			buildPhases = (
+				CE0C718D274229B7003B1EA8 /* Sources */,
+				CE0C718E274229B7003B1EA8 /* Frameworks */,
+				CE0C718F274229B7003B1EA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE0C7193274229B7003B1EA8 /* PBXTargetDependency */,
+			);
+			name = UPhoneDemoUITests;
+			productName = UPhoneDemoUITests;
+			productReference = CE0C7191274229B7003B1EA8 /* UPhoneDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE0C7164274229B5003B1EA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					CE0C716B274229B5003B1EA8 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					CE0C7186274229B7003B1EA8 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CE0C716B274229B5003B1EA8;
+					};
+					CE0C7190274229B7003B1EA8 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = CE0C716B274229B5003B1EA8;
+					};
+				};
+			};
+			buildConfigurationList = CE0C7167274229B5003B1EA8 /* Build configuration list for PBXProject "UPhoneDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE0C7163274229B5003B1EA8;
+			productRefGroup = CE0C716D274229B5003B1EA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE0C716B274229B5003B1EA8 /* UPhoneDemo */,
+				CE0C7186274229B7003B1EA8 /* UPhoneDemoTests */,
+				CE0C7190274229B7003B1EA8 /* UPhoneDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE0C716A274229B5003B1EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0C717F274229B7003B1EA8 /* LaunchScreen.storyboard in Resources */,
+				CE0C717C274229B7003B1EA8 /* Assets.xcassets in Resources */,
+				CE0C717A274229B5003B1EA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C7185274229B7003B1EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C718F274229B7003B1EA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20768F7B784C7A6EC6655E46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UPhoneDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1832972BE467F4DFECCC5D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UPhoneDemo/Pods-UPhoneDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UPhoneDemo/Pods-UPhoneDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UPhoneDemo/Pods-UPhoneDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE0C7168274229B5003B1EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0C71C527422A12003B1EA8 /* UPhoneMainView.m in Sources */,
+				CEBDA7AB27586AE800AA620E /* SceneDelegate.m in Sources */,
+				CE0C71C027422A12003B1EA8 /* UPhoneTouchButton.m in Sources */,
+				CE60570A27880E2E00D557DE /* UPhoneSettingFooterView.m in Sources */,
+				CE60570727880E2E00D557DE /* UPhoneSettingNewView.m in Sources */,
+				CE0C71C427422A12003B1EA8 /* UCBaseAnimationPopView.m in Sources */,
+				CE60570827880E2E00D557DE /* UPhoneSettingSwitchLiveTableViewCell.m in Sources */,
+				CE0C7177274229B5003B1EA8 /* ViewController.m in Sources */,
+				CE0C71C127422A12003B1EA8 /* UPhoneNavigationView.m in Sources */,
+				CE60570927880E2E00D557DE /* UPhoneSettingOperationTableViewCell.m in Sources */,
+				CE60570627880E2E00D557DE /* UPhoneSettingDefinitionTableViewCell.m in Sources */,
+				CE0C71C627422A12003B1EA8 /* UTestVideoViewController.m in Sources */,
+				CE60570427880E2E00D557DE /* UPhoneSettingTableViewCell.m in Sources */,
+				CE0C7171274229B5003B1EA8 /* AppDelegate.m in Sources */,
+				CE0C71BE27422A12003B1EA8 /* UPhoneDefinitionView.m in Sources */,
+				CE0C7182274229B7003B1EA8 /* main.m in Sources */,
+				CE0C71C227422A12003B1EA8 /* UPhoneBaseView.m in Sources */,
+				CE60570D2788167200D557DE /* UPhonePacketLostView.m in Sources */,
+				CE60570527880E2E00D557DE /* UPhoneSettingSwitchTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C7183274229B7003B1EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0C718C274229B7003B1EA8 /* UPhoneDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE0C718D274229B7003B1EA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0C7198274229B7003B1EA8 /* UPhoneDemoUITestsLaunchTests.m in Sources */,
+				CE0C7196274229B7003B1EA8 /* UPhoneDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE0C7189274229B7003B1EA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE0C716B274229B5003B1EA8 /* UPhoneDemo */;
+			targetProxy = CE0C7188274229B7003B1EA8 /* PBXContainerItemProxy */;
+		};
+		CE0C7193274229B7003B1EA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE0C716B274229B5003B1EA8 /* UPhoneDemo */;
+			targetProxy = CE0C7192274229B7003B1EA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE0C7178274229B5003B1EA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0C7179274229B5003B1EA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE0C717D274229B7003B1EA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE0C717E274229B7003B1EA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE0C7199274229B7003B1EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE0C719A274229B7003B1EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE0C719C274229B7003B1EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1A9AC21991BB178C2A188D0 /* Pods-UPhoneDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 001;
+				DEVELOPMENT_TEAM = CFP9KY4MGC;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UPhoneDemo",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UPhoneDemo/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "此App将要访问您的麦克风";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "请允许App访问您的相册";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_execute;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = test.UPhoneDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE0C719D274229B7003B1EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B86B612A02933125BD4EE53 /* Pods-UPhoneDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 001;
+				DEVELOPMENT_TEAM = CFP9KY4MGC;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UPhoneDemo",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UPhoneDemo/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "此App将要访问您的麦克风";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "请允许App访问您的相册";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_execute;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = test.UPhoneDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE0C719F274229B7003B1EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.UPhoneDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UPhoneDemo.app/UPhoneDemo";
+			};
+			name = Debug;
+		};
+		CE0C71A0274229B7003B1EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.UPhoneDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UPhoneDemo.app/UPhoneDemo";
+			};
+			name = Release;
+		};
+		CE0C71A2274229B7003B1EA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.UPhoneDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UPhoneDemo;
+			};
+			name = Debug;
+		};
+		CE0C71A3274229B7003B1EA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.UPhoneDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UPhoneDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE0C7167274229B5003B1EA8 /* Build configuration list for PBXProject "UPhoneDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0C7199274229B7003B1EA8 /* Debug */,
+				CE0C719A274229B7003B1EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0C719B274229B7003B1EA8 /* Build configuration list for PBXNativeTarget "UPhoneDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0C719C274229B7003B1EA8 /* Debug */,
+				CE0C719D274229B7003B1EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0C719E274229B7003B1EA8 /* Build configuration list for PBXNativeTarget "UPhoneDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0C719F274229B7003B1EA8 /* Debug */,
+				CE0C71A0274229B7003B1EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE0C71A1274229B7003B1EA8 /* Build configuration list for PBXNativeTarget "UPhoneDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE0C71A2274229B7003B1EA8 /* Debug */,
+				CE0C71A3274229B7003B1EA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE0C7164274229B5003B1EA8 /* Project object */;
+}

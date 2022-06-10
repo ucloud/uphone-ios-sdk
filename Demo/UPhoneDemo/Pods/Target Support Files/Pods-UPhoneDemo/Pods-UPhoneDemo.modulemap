@@ -1,0 +1,6 @@
+framework module Pods_UPhoneDemo {
+  umbrella header "Pods-UPhoneDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
