@@ -71,7 +71,7 @@
         _taskListButton.layer.cornerRadius = 13;
         _taskListButton.layer.borderColor = RGBA(134, 139, 150, 1).CGColor;
         _taskListButton.layer.borderWidth = 0.5;
-        [_taskListButton setTitle:@"清理后台" forState:UIControlStateNormal];
+        [_taskListButton setTitle:@"加速" forState:UIControlStateNormal];
         [_taskListButton setTitleColor:RGBA(134, 139, 150, 1) forState:UIControlStateNormal];
         [_taskListButton setTitleColor:RGBA(89, 193, 132, 1) forState:UIControlStateSelected];
         _taskListButton.titleLabel.font = [UIFont systemFontOfSize:12];
@@ -113,7 +113,7 @@
     }
     return _backButton;
 }
-//0：清理后台 1：回到桌面 2：返回
+//0：加速 1：回到桌面 2：返回
 - (void)definitionClick:(UIButton *)sender {
     if (sender == _taskListButton) {
         _taskListButton.selected = YES;

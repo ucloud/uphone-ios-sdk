@@ -63,9 +63,9 @@
 - (NSInteger)getUPhoneLinkDelay;
 
 /**
- 功能描述: 返回清理后台
+ 功能描述: 加速
  */
-- (void)backUPhoneTaskList;
+- (void)speedUpUPhone;
 
 /**
  功能描述: 返回桌面

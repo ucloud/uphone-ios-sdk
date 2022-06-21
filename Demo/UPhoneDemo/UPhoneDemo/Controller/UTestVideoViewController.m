@@ -142,7 +142,7 @@
             UTestVideoViewController *strongSelf = weakSelf;
             if ([str isEqualToString:@"0"]) {
                 [strongSelf->_popView dismiss];
-                [strongSelf backUPhoneTaskList];
+                [strongSelf speedUpUPhone];
             }else if ([str isEqualToString:@"1"]){
                 [strongSelf->_popView dismiss];
                 [strongSelf backUPhoneHome];
