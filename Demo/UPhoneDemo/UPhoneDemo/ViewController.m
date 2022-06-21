@@ -38,6 +38,7 @@
 
     UTestVideoViewController *videoCallViewController =
     [[UTestVideoViewController alloc] initWithUphone:phoneId];
+    videoCallViewController.token = @"123456";
     videoCallViewController.modalTransitionStyle =
     UIModalTransitionStyleCrossDissolve;
     videoCallViewController.modalPresentationStyle = UIModalPresentationFullScreen;

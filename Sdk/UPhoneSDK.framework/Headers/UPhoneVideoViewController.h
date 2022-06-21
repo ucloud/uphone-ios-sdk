@@ -21,11 +21,16 @@
 
 @interface UPhoneVideoViewController : UIViewController
 
+/**
+ token 连接访问校验值(注:如果调用api接口SetUPhoneToken进行了设置，此处为必填,否则填空)
+ */
+@property(nonatomic, copy)NSString *token;
 @property(nonatomic, weak) id<UPhoneVideoViewControllerDelegate> delegate;
 
 /**
  功能描述：初始化云手机
- 参数说明：uphoneId接入商的唯一 ID，用来区分不同的接入商。
+ 参数说明：
+ uphoneId接入商的唯一 ID，用来区分不同的接入商。
  */
 
 - (instancetype)initWithUphone:(NSString *)uphoneId;
@@ -139,5 +144,6 @@
  返回参数: NSString类型参数，保留两位小数，例如：0.15MB/s。
  */
 - (NSString *)getNetworkSpeed;
+
 
 @end
