@@ -8,7 +8,7 @@
 #import "AppDelegate.h"
 #import <UPhoneSDK/UPhoneSDK.h>
 #import <AVKit/AVKit.h>
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,38 +21,70 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[UIApplication sharedApplication] setIdleTimerDisabled: YES];
+    self.window =  [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //解决该问题的代码
+       NSArray *windows = [[UIApplication sharedApplication] windows];
+       for(UIWindow *window in windows) {
+           if(window.rootViewController == nil){
+               ViewController *vc = [[ViewController alloc]initWithNibName:nil
+                                                                    bundle:nil];
+               window.rootViewController = vc;
+           }
+       }
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
 
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
-}
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     NSLog(@"--- %s ---",__func__);
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
- 
+    self->bgTask = [application beginBackgroundTaskWithExpirationHandler:^{
+                
+        [application endBackgroundTask:self->bgTask];
+        self->bgTask = UIBackgroundTaskInvalid;
+     }];
+     
+     if (self->bgTask == UIBackgroundTaskInvalid) {
+         NSLog(@"failed to start background task!");
+     }
+     
+   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    __block NSTimeInterval timeRemain = 0;
+     do{
+       [NSThread sleepForTimeInterval:5];
+         if (self->bgTask!= UIBackgroundTaskInvalid) {
+           dispatch_async(dispatch_get_main_queue(), ^{
+               timeRemain = [application backgroundTimeRemaining];
+           });
+         NSLog(@"Time remaining: %f",timeRemain);
+       }
+     }while(self->bgTask!= UIBackgroundTaskInvalid && timeRemain > 0);
+  
+     dispatch_async(dispatch_get_main_queue(), ^{
+       if (self->bgTask != UIBackgroundTaskInvalid)
+       {
+         [application endBackgroundTask:self->bgTask];
+           self->bgTask = UIBackgroundTaskInvalid;
+       }
+     });
+   });
+    
 }
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     NSLog(@"--- %s ---",__func__);
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-  
+    if (bgTask != UIBackgroundTaskInvalid) {
+        [application endBackgroundTask:bgTask];
+        bgTask = UIBackgroundTaskInvalid;
+    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

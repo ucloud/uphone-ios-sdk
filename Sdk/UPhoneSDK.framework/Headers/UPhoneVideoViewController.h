@@ -52,7 +52,7 @@
 /**
  功能描述:云手机连接保活，防止息屏以及切换到其他app返回时连接断开问题
  */
-- (void)applicationWillResignActive:(NSNotification *)notify;
+- (void)applicationWillResignActive;
 
 /**
  功能描述:设置 UPhone 分辨率
