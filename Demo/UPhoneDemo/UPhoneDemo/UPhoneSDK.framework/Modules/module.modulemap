@@ -1,6 +1,0 @@
-framework module UPhoneSDK {
-  umbrella header "UPhoneSDK.h"
-
-  export *
-  module * { export * }
-}
