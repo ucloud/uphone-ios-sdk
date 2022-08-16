@@ -45,6 +45,14 @@
  */
 - (void)disConnectUPhone;
 
+/**
+ 功能描述:连接云手机失败原因，在此方法内可调用重连方法进行重连操作
+ */
+- (void)clickConnectUPhoneErrorAction:(NSString *)errorStr;
+/**
+ 功能描述:云手机连接保活，防止息屏以及切换到其他app返回时连接断开问题
+ */
+- (void)applicationWillResignActive:(NSNotification *)notify;
 
 /**
  功能描述:设置 UPhone 分辨率

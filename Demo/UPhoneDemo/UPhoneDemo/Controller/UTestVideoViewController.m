@@ -15,9 +15,13 @@
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 #define  tabBarViewW 200
+#define RepeatTimes  5
+
 @interface UTestVideoViewController ()
 {
     double _landScape;
+    NSInteger _timerStr;
+
     
 }
 @property (nonatomic, strong) UPhoneTouchButton *myButton;
@@ -56,7 +60,8 @@
     [[NSUserDefaults standardUserDefaults] setObject:@"no" forKey:@"isShowDelay"];
     
     [[NSUserDefaults standardUserDefaults] setObject:@"no" forKey:@"isShowNetWork"];
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive:) name:@"applicationWillResignActive" object:nil];
+
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerAction:) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
 }
@@ -67,6 +72,34 @@
     [[NSUserDefaults standardUserDefaults] setObject:@"no" forKey:@"isConnect"];
     [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"rtmpUrl"];
     
+}
+
+- (void)applicationWillResignActive:(NSNotification *)notify{
+    
+}
+- (void)clickConnectUPhoneErrorAction:(NSString *)errorStr {
+    if (errorStr.length > 0) {
+        NSLog(@"%@",errorStr);
+        _timerStr++;
+        if (_timerStr ==RepeatTimes) {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"错误报告" message:[NSString stringWithFormat:@"%@",errorStr] preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *conform = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                [self disConnectUPhone];
+                
+            }];
+            UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                
+            }];
+            [alert addAction:conform];
+            [alert addAction:cancel];
+            
+            [self presentViewController:alert animated:YES completion:nil];
+        }else if (_timerStr < RepeatTimes){
+            sleep(2);
+            [UPhoneService reconnetUPhone];//可根据自己的实际情况进行重连次数限制，当前限制5次重连
+        }
+ 
+    }
 }
 
 - (void)timerAction:(NSTimer*)timer
