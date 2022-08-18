@@ -24,8 +24,6 @@
 		CE0C71C427422A12003B1EA8 /* UCBaseAnimationPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C71B727422A12003B1EA8 /* UCBaseAnimationPopView.m */; };
 		CE0C71C527422A12003B1EA8 /* UPhoneMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C71B927422A12003B1EA8 /* UPhoneMainView.m */; };
 		CE0C71C627422A12003B1EA8 /* UTestVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0C71BD27422A12003B1EA8 /* UTestVideoViewController.m */; };
-		CE1AC8AB28AE2CF900A20DD8 /* UPhoneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1AC8A928AE2CF300A20DD8 /* UPhoneSDK.framework */; platformFilter = ios; };
-		CE1AC8AC28AE2CF900A20DD8 /* UPhoneSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE1AC8A928AE2CF300A20DD8 /* UPhoneSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE60570427880E2E00D557DE /* UPhoneSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6056F627880E2E00D557DE /* UPhoneSettingTableViewCell.m */; };
 		CE60570527880E2E00D557DE /* UPhoneSettingSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6056F727880E2E00D557DE /* UPhoneSettingSwitchTableViewCell.m */; };
 		CE60570627880E2E00D557DE /* UPhoneSettingDefinitionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6056F827880E2E00D557DE /* UPhoneSettingDefinitionTableViewCell.m */; };
@@ -34,6 +32,9 @@
 		CE60570927880E2E00D557DE /* UPhoneSettingOperationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6056FE27880E2E00D557DE /* UPhoneSettingOperationTableViewCell.m */; };
 		CE60570A27880E2E00D557DE /* UPhoneSettingFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE60570227880E2E00D557DE /* UPhoneSettingFooterView.m */; };
 		CE60570D2788167200D557DE /* UPhonePacketLostView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE60570C2788167200D557DE /* UPhonePacketLostView.m */; };
+		CEE5560628AE4765009032A7 /* UPhoneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE5560428AE475F009032A7 /* UPhoneSDK.framework */; platformFilter = ios; };
+		CEE5560728AE4765009032A7 /* UPhoneSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEE5560428AE475F009032A7 /* UPhoneSDK.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CEE5560B28AE47CD009032A7 /* ARDSettingVolumeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE5560A28AE47CD009032A7 /* ARDSettingVolumeTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +61,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE1AC8AC28AE2CF900A20DD8 /* UPhoneSDK.framework in Embed Frameworks */,
+				CEE5560728AE4765009032A7 /* UPhoneSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +102,6 @@
 		CE0C71BA27422A12003B1EA8 /* UCCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCCommon.h; sourceTree = "<group>"; };
 		CE0C71BC27422A12003B1EA8 /* UTestVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UTestVideoViewController.h; sourceTree = "<group>"; };
 		CE0C71BD27422A12003B1EA8 /* UTestVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UTestVideoViewController.m; sourceTree = "<group>"; };
-		CE1AC8A928AE2CF300A20DD8 /* UPhoneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPhoneSDK.framework; sourceTree = "<group>"; };
 		CE6056F627880E2E00D557DE /* UPhoneSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneSettingTableViewCell.m; sourceTree = "<group>"; };
 		CE6056F727880E2E00D557DE /* UPhoneSettingSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneSettingSwitchTableViewCell.m; sourceTree = "<group>"; };
 		CE6056F827880E2E00D557DE /* UPhoneSettingDefinitionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhoneSettingDefinitionTableViewCell.m; sourceTree = "<group>"; };
@@ -119,6 +119,9 @@
 		CE60570B2788167200D557DE /* UPhonePacketLostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPhonePacketLostView.h; sourceTree = "<group>"; };
 		CE60570C2788167200D557DE /* UPhonePacketLostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UPhonePacketLostView.m; sourceTree = "<group>"; };
 		CEC746F62799048D00D741B8 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE5560428AE475F009032A7 /* UPhoneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPhoneSDK.framework; sourceTree = "<group>"; };
+		CEE5560928AE47CD009032A7 /* ARDSettingVolumeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingVolumeTableViewCell.h; sourceTree = "<group>"; };
+		CEE5560A28AE47CD009032A7 /* ARDSettingVolumeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingVolumeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1AC8AB28AE2CF900A20DD8 /* UPhoneSDK.framework in Frameworks */,
+				CEE5560628AE4765009032A7 /* UPhoneSDK.framework in Frameworks */,
 				9C0DA7CBE2DA4A188AA9D209 /* Pods_UPhoneDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,7 +194,7 @@
 		CE0C716E274229B5003B1EA8 /* UPhoneDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CE1AC8A928AE2CF300A20DD8 /* UPhoneSDK.framework */,
+				CEE5560428AE475F009032A7 /* UPhoneSDK.framework */,
 				CE0C71BB27422A12003B1EA8 /* Controller */,
 				CE0C71BA27422A12003B1EA8 /* UCCommon.h */,
 				CE0C71A927422A12003B1EA8 /* View */,
@@ -256,6 +259,8 @@
 				CE6056F627880E2E00D557DE /* UPhoneSettingTableViewCell.m */,
 				CE60570B2788167200D557DE /* UPhonePacketLostView.h */,
 				CE60570C2788167200D557DE /* UPhonePacketLostView.m */,
+				CEE5560928AE47CD009032A7 /* ARDSettingVolumeTableViewCell.h */,
+				CEE5560A28AE47CD009032A7 /* ARDSettingVolumeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE5560B28AE47CD009032A7 /* ARDSettingVolumeTableViewCell.m in Sources */,
 				CE0C71C527422A12003B1EA8 /* UPhoneMainView.m in Sources */,
 				CE0C71C027422A12003B1EA8 /* UPhoneTouchButton.m in Sources */,
 				CE60570A27880E2E00D557DE /* UPhoneSettingFooterView.m in Sources */,

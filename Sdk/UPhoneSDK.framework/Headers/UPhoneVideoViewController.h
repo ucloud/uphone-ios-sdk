@@ -162,4 +162,12 @@
 - (NSString *)getNetworkSpeed;
 
 
+/**
+ 功能描述: 设置音量
+ 参数描述 ：int
+ 1：音量加1
+ -1：音量减1
+ */
+- (void)setVolume:(int)volume;
+
 @end

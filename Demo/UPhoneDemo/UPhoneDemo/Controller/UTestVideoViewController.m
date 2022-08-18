@@ -266,6 +266,11 @@
             
         };
         
+        _settingView.clickVolumeButtonBlock = ^(int num) {
+            UTestVideoViewController *strongSelf = weakSelf;
+            [strongSelf setVolume:num];
+        };
+
         _settingView.clickChooseMuteButtonBlock = ^(BOOL isSelect) {
             UTestVideoViewController *strongSelf = weakSelf;
             if (isSelect) {

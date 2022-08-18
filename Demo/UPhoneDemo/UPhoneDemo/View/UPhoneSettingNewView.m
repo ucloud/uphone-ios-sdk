@@ -16,6 +16,8 @@
 #import "UPhoneSettingDefinitionTableViewCell.h"
 #import "UPhoneSettingOperationTableViewCell.h"
 #import "UPhoneSettingSwitchLiveTableViewCell.h"
+#import "ARDSettingVolumeTableViewCell.h"
+
 @interface UPhoneSettingNewView()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong)UITableView *leftTableView;
 @property (nonatomic, strong)UITableView *rightTableView;
@@ -74,7 +76,7 @@
     if (tableView == _leftTableView) {
         return _logoData.count;
     }else{
-        return 5;
+        return 6;
     }
 }
 
@@ -218,6 +220,21 @@
                 }
             };
             return cell;
+        }else if (indexPath.row == 4){
+            static NSString * Identifier=@"ARDSettingVolumeTableViewCell";
+            ARDSettingVolumeTableViewCell * cell=[tableView dequeueReusableCellWithIdentifier:Identifier];
+            if (!cell) {
+                cell = [[ARDSettingVolumeTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:Identifier];
+            }
+            cell.selectionStyle=UITableViewCellSelectionStyleNone;
+            __weak UPhoneSettingNewView *weakSelf = self;
+            cell.clickVolumeBlock = ^(int num) {
+                UPhoneSettingNewView *strongSelf = weakSelf;
+                if (strongSelf.clickVolumeButtonBlock) {
+                    strongSelf.clickVolumeButtonBlock(num);
+                }
+            };
+            return cell;
         }else {
             static NSString * Identifier=@"UPhoneSettingOperationTableViewCell";
             UPhoneSettingOperationTableViewCell * cell=[tableView dequeueReusableCellWithIdentifier:Identifier];
@@ -260,7 +277,7 @@
     if (tableView == _leftTableView) {
         return 44;
     }else{
-        if (indexPath.row == 3 || indexPath.row == 4) {
+        if (indexPath.row == 3 || indexPath.row == 4 || indexPath.row == 5) {
             return 90;
         }else if(indexPath.row == 2){
             return 80;
@@ -318,6 +335,10 @@
         _rightTableView.delegate = self;
         _rightTableView.dataSource = self;
         _rightTableView.backgroundColor = RGBA(43, 51, 60, 1);
+        [_rightTableView registerClass:[UPhoneSettingSwitchTableViewCell class] forCellReuseIdentifier:@"UPhoneSettingSwitchTableViewCell"];
+        [_rightTableView registerClass:[UPhoneSettingSwitchLiveTableViewCell class] forCellReuseIdentifier:@"UPhoneSettingSwitchLiveTableViewCell"];
+        [_rightTableView registerClass:[UPhoneSettingSwitchTableViewCell class] forCellReuseIdentifier:@"UPhoneSettingSwitchTableViewCell"];
+        [_rightTableView registerClass:[ARDSettingVolumeTableViewCell class] forCellReuseIdentifier:@"ARDSettingVolumeTableViewCell"];
 
     }
     return _rightTableView;
