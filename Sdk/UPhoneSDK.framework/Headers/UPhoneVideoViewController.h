@@ -60,9 +60,17 @@
  取值如下整数:
  0// 标清
  3// 高清
- 6// 超清
  */
 - (void)setUPhoneResolution:(int)resolution;
+
+/**
+ 功能描述:设置 UPhone 分辨率
+ 参数描述：message,
+ 高清     设置高清成功
+ 标清     设置标清成功
+ 失败        设置分辨率失败
+ */
+- (void)clickSetResolutionMessageAction:(NSString *)message;
 
 /**
  功能描述: 获得网络延时

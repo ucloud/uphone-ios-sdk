@@ -18,6 +18,7 @@
         [self.contentView addSubview:self.highButton];
         [self.contentView addSubview:self.lowButton];
         self.contentView.backgroundColor = RGBA(43, 51, 60, 1);
+        self.superButton.hidden = YES;
 
     }
     return self;
@@ -40,7 +41,7 @@
     }];
     
     [_highButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.superButton.mas_right).offset((self.contentView.frame.size.width - 220)/2);
+        make.left.equalTo(self.contentView.mas_left).offset(20);
         make.top.equalTo(self.definitionLabel.mas_bottom).offset(10);
         make.height.equalTo(@28);
         make.width.equalTo(@60);
@@ -131,10 +132,6 @@
         if (self.clickDefinitionBlock) {
             self.clickDefinitionBlock(6);
         }
-        
-        //暂时
-        
-        [[NSUserDefaults standardUserDefaults] setObject:@"超清" forKey:@"test_Definition"];
 
     }else if (sender == _highButton){
         _highButton.selected = YES;
@@ -149,7 +146,6 @@
         if (self.clickDefinitionBlock) {
             self.clickDefinitionBlock(3);
         }
-        [[NSUserDefaults standardUserDefaults] setObject:@"高清" forKey:@"test_Definition"];
 
     }else{
         _lowButton.selected = YES;
@@ -165,9 +161,6 @@
         if (self.clickDefinitionBlock) {
             self.clickDefinitionBlock(0);
         }
-        
-        [[NSUserDefaults standardUserDefaults] setObject:@"标清" forKey:@"test_Definition"];
-
     }
 }
 @end

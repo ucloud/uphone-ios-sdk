@@ -75,7 +75,7 @@
 }
 
 - (void)applicationWillResignActive:(NSNotification *)notify{
-    
+    [self applicationWillResignActive];
 }
 - (void)clickConnectUPhoneErrorAction:(NSString *)errorStr {
     if (errorStr.length > 0) {
@@ -95,16 +95,27 @@
             
             [self presentViewController:alert animated:YES completion:nil];
         }else if (_timerStr < RepeatTimes){
-            sleep(2);
+            sleep(3);
             [UPhoneService reconnetUPhone];//可根据自己的实际情况进行重连次数限制，当前限制5次重连
         }
  
     }
 }
 
+- (void)clickSetResolutionMessageAction:(NSString *)message {
+    if ([message isEqualToString:@"高清"]) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"高清" forKey:@"test_Definition"];
+        NSLog(@"分辨率修改为高清");
+    }else if ([message isEqualToString:@"标清"]){
+        [[NSUserDefaults standardUserDefaults] setObject:@"标清" forKey:@"test_Definition"];
+        NSLog(@"分辨率修改为标清");
+    }else{
+        NSLog(@"分辨率设置失败");
+    }
+}
+
 - (void)timerAction:(NSTimer*)timer
 {
-    NSString *networkSpeed = [self getNetworkSpeed];
     [_myButton setTitle:[self getNetworkSpeed] forState:UIControlStateNormal];
 }
 
@@ -187,7 +198,7 @@
         
         _settingView.clickDefinitionButtonBlock = ^(int resolution) {
             UTestVideoViewController *strongSelf = weakSelf;
-//            [strongSelf->_popView dismiss];
+            [strongSelf->_popView dismiss];
             //修改分辨率
             [strongSelf setUPhoneResolution:resolution];
             
