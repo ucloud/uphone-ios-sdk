@@ -35,9 +35,15 @@
        }
     [self.window makeKeyAndVisible];
     
-    UTestVideoViewController *videoCallViewController =
-    [[UTestVideoViewController alloc] initWithprojectId:@"xxxx" publicKey:@"xxxx" privateKey:@"xxxx" appVersionId:@"xxxx"];
-    videoCallViewController.token = @"123456";
+    /**
+     功能描述：初始化云游戏
+     参数说明：
+     projectId 项目ID
+     publicKey 公钥
+     privateKey 私钥
+     appVersionId 游戏ID
+     */
+    UTestVideoViewController *videoCallViewController = [[UTestVideoViewController alloc] initWithprojectId:@"xxxx" publicKey:@"xxxx" privateKey:@"xxxx" appVersionId:@"xxxx"];
     videoCallViewController.modalTransitionStyle =
     UIModalTransitionStyleCrossDissolve;
     videoCallViewController.modalPresentationStyle = UIModalPresentationFullScreen;
