@@ -13,7 +13,7 @@
 @class UPhoneVideoViewController;
 @protocol UPhoneVideoViewControllerDelegate <NSObject>
 /**
- 功能描述：断开连接云手机时需要实现的功能可以写在这里
+ 功能描述：断开连接云手机/云游戏时需要实现的功能可以写在这里
  */
 - (void)viewControllerDidFinish:(UPhoneVideoViewController *)viewController;
 
@@ -36,21 +36,38 @@
 - (instancetype)initWithUphone:(NSString *)uphoneId;
 
 /**
- 功能描述:连接云手机
+ 功能描述：初始化云游戏
+ 参数说明：
+ projectId 项目ID
+ publicKey 公钥
+ privateKey 私钥
+ appVersionId 游戏ID
+ */
+- (instancetype)initWithprojectId:(NSString *)projectId publicKey:(NSString *)publicKey privateKey:(NSString *)privateKey appVersionId:(NSString *)appVersionId;
+
+
+/**
+ 功能描述:连接云手机/云游戏
  */
 - (void)connectUPhone;
 
 /**
- 功能描述:断开连接云手机
+ 功能描述:断开连接云手机/云游戏
  */
 - (void)disConnectUPhone;
 
 /**
- 功能描述:连接云手机失败原因，在此方法内可调用重连方法进行重连操作
+ 功能描述:创建云游戏实例失败原因（连接云游戏失败时，先调用该方法查看是不是创建云游戏示例失败，如果成功再去调用- (void)clickConnectUPhoneErrorAction:(NSString *)errorStr 方法）
+ */
+- (void)clickConnectUGameErrorAction:(NSString *)errorStr;
+
+/**
+ 功能描述:连接云手机/云游戏失败原因，在此方法内可调用重连方法进行重连操作
  */
 - (void)clickConnectUPhoneErrorAction:(NSString *)errorStr;
+
 /**
- 功能描述:云手机连接保活，防止息屏以及切换到其他app返回时连接断开问题
+ 功能描述:云手机/云游戏连接保活，防止息屏以及切换到其他app返回时连接断开问题
  */
 - (void)applicationWillResignActive;
 
