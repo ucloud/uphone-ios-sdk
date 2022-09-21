@@ -102,6 +102,24 @@
     }
 }
 
+- (void)clickConnectUGameErrorAction:(NSString *)errorStr {
+    if (errorStr.length > 0) {
+        NSLog(@"%@",errorStr);
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"错误报告" message:[NSString stringWithFormat:@"%@",errorStr] preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *conform = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }];
+        UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alert addAction:conform];
+        [alert addAction:cancel];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+
+    }
+}
+
 - (void)clickSetResolutionMessageAction:(NSString *)message {
     if ([message isEqualToString:@"高清"]) {
         [[NSUserDefaults standardUserDefaults] setObject:@"高清" forKey:@"test_Definition"];
