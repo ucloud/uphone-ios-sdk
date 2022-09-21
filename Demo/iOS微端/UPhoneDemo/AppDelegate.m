@@ -36,7 +36,7 @@
     [self.window makeKeyAndVisible];
     
     UTestVideoViewController *videoCallViewController =
-    [[UTestVideoViewController alloc] initWithprojectId:@"org-ayir2q" publicKey:@"4ZF9nvwQiw5BLt8ffGXIdD3JRSh4xLvnZ" privateKey:@"JyJGqEatc4MFKTz0ENokaKBNRKjiU9RXP4OEiKwlbrSo" appVersionId:@"ver-Krgz5a"];
+    [[UTestVideoViewController alloc] initWithprojectId:@"xxxx" publicKey:@"xxxx" privateKey:@"xxxx" appVersionId:@"xxxx"];
     videoCallViewController.token = @"123456";
     videoCallViewController.modalTransitionStyle =
     UIModalTransitionStyleCrossDissolve;
